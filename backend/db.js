@@ -5,7 +5,7 @@ const connectToMongo = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI, {
      
-      useUnifiedTopology: true,
+     
       connectTimeoutMS: 30000, // Set a longer timeout (e.g., 30 seconds)
     });
     
