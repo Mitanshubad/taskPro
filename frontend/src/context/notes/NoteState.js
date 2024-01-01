@@ -7,7 +7,7 @@ const NoteState = (props) => {
   const [tags, setTags] = useState("");
   const [tagchange, setTagchange] = useState(false);
   const [selectedValue, setSelectedValue] = useState("");
-  const host = "https://todo-dxj2.onrender.com/";
+  const host = "https://todo-dxj2.onrender.com";
   const [time, setTime] = useState("");
 
   // fetching all daily tasks
