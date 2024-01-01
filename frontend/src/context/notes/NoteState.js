@@ -7,7 +7,7 @@ const NoteState = (props) => {
   const [tags, setTags] = useState("");
   const [tagchange, setTagchange] = useState(false);
   const [selectedValue, setSelectedValue] = useState("");
-  const host = "http://localhost:5000";
+  const host = "https://todo-dxj2.onrender.com/";
   const [time, setTime] = useState("");
 
   // fetching all daily tasks
@@ -54,7 +54,7 @@ const NoteState = (props) => {
 
   //add daily task
   const addNote = async (title, description, tag, deadline, deadlinetime) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const response = await fetch(`${host}/api/notes/addnote/`, {
       method: "POST",
       headers: {
@@ -78,7 +78,7 @@ const NoteState = (props) => {
     deadline,
     deadlinetime
   ) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const response = await fetch(`${host}/api/notes/addMonthlytask/`, {
       method: "POST",
       headers: {
@@ -97,7 +97,7 @@ const NoteState = (props) => {
 
   // add yearly
   const addYearly = async (title, description, tag, deadline, deadlinetime) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const response = await fetch(`${host}/api/notes/addyearlytask/`, {
       method: "POST",
       headers: {
@@ -115,7 +115,7 @@ const NoteState = (props) => {
   };
   // Delete daily tasks
   const deleteNote = async (id) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
       method: "DELETE",
       headers: {
@@ -133,7 +133,7 @@ const NoteState = (props) => {
 
   // delete monthly tasks
   const deleteMonthly = async (id) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const response = await fetch(`${host}/api/notes/deleteMonthly/${id}`, {
       method: "DELETE",
       headers: {
@@ -152,7 +152,7 @@ const NoteState = (props) => {
 
   // delete yearly tasks
   const deleteYearly = async (id) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const response = await fetch(`${host}/api/notes/deleteYearly/${id}`, {
       method: "DELETE",
       headers: {
@@ -171,7 +171,7 @@ const NoteState = (props) => {
 
   // edit daily tasks
   const editNote = async (id, title, description, tag) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const data = {
       title: title,
       description: description,
@@ -204,7 +204,7 @@ const NoteState = (props) => {
 
   // edit monthly tasks
   const editMonthly = async (id, title, description, tag) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const data = {
       title: title,
       description: description,
@@ -237,7 +237,7 @@ const NoteState = (props) => {
 
   // edit Yearly tasks
   const editYearly = async (id, title, description, tag) => {
-    const host = "http://localhost:5000";
+    const host = "https://taskprodeploy.onrender.com";
     const data = {
       title: title,
       description: description,
